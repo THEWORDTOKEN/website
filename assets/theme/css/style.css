@@ -1118,3 +1118,8 @@ blockquote {
   line-height: 1;
 
 }
+.active {
+  text-decoration: overline;
+  font-weight: bolder;
+  color: #c37a7a !important;
+}
