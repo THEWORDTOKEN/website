@@ -447,6 +447,7 @@ nav .mbr-section-btn {
   .mbr-arrow {
     display: none;
   }
+  
 }
 
 .mbr-arrow>a {
@@ -712,6 +713,11 @@ input[type=range] {
   }
 }
 
+@media (max-width: 768px) {
+  .d-none-sm {
+    display: none !important;
+  }
+}
 .carousel-item {
   text-align: center;
 }
@@ -1022,7 +1028,7 @@ blockquote {
 }
 
 .up-and-down-animate {
-  animation: up-and-down 5s infinite linear;
+  animation: up-and-down 3s infinite linear;
 }
 
 .grow-font {
@@ -1041,11 +1047,11 @@ blockquote {
 
 @keyframes up-and-down {
   from {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 
   to {
-    transform: translateX(-30%);
+    transform: translateY(80%);
   }
 }
 
