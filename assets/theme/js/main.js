@@ -22,7 +22,5 @@ function callbackFunc() {
     }
 }
 
-// Add dismissable popup with text for 10 seconds when the page loads
-
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
