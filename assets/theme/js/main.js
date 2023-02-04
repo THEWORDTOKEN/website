@@ -22,5 +22,13 @@ function callbackFunc() {
     }
 }
 
+
+function copyText() {
+    // Copy the text inside the text field
+    navigator.clipboard.writeText("https://pancakeswap.finance/swap?chain=bsc&inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0xf00cD9366A13e725AB6764EE6FC8Bd21dA22786e");
+
+    // Alert the copied text
+    alert("Swap Link copied, Paste in DApps to purchase $TWD");
+}
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
