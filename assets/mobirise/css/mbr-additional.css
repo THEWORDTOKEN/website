@@ -1230,6 +1230,11 @@ a {
   padding-bottom: 90px;
   background-image: url("../../../assets/images/hero-bg.gif");
 }
+.white-paper-bg {
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/dark-bg1.gif");
+}
 
 .cid-sFGzrhlvIh .icons-media-container {
   display: flex;
