@@ -1,0 +1,109 @@
+.roadmap{
+
+    &__title{
+        text-align: center;
+        padding-bottom: 50px;
+
+        h1{
+            color:#111315;
+            font-size: 36px;
+            padding-bottom: 5px;
+        }
+
+        p{
+            color:#616161;
+            font-size:20px;
+        }
+    }
+
+    &__content{
+        list-style: none;
+        position:relative;
+        padding-bottom: 50px;
+
+        &::before{
+            content:'';
+            position: absolute;
+            display:block;
+            width:1px;
+            background:#000;
+            height:100%;
+            left:50%;
+            transform: translateX(-50%);
+        }
+
+        &--timeline{
+            position: relative;
+            padding-top: 25px;
+            padding-bottom: 50px;
+
+            &__track{
+                background:red;
+                height:28px;
+                width:28px;
+                border-radius: 50%;
+                left:50%;
+                position:absolute;
+                transform: translateX(-50%);
+            }
+            &__content{
+                width:50%;
+                padding: 0 30px;
+                color:#393939;
+                font-size:20px;
+
+                @media screen and (max-width:900px){
+                    font-size: 16px;
+                }
+
+                &.display-right{
+                    text-align: left;
+                    margin-left: auto;
+
+                    p{
+                        margin-right: auto;
+                        
+                    }
+                }
+                &.display-left{
+                    text-align: right;
+
+                    p{
+                        margin-left: auto;
+                        
+                    }
+                }
+
+                p{
+                    max-width:300px;
+                }
+                
+            }
+            
+        }
+    }
+
+    &__subtitle{
+        text-align: center;
+        padding-top: 50px;
+
+        p{
+            font-size:32px;
+            font-weight: 400;
+            color:#616161;
+        }
+    }
+}
+
+.roadmap__color-1{
+    background: #DAF4E9;
+}
+.roadmap__color-2{
+    background: #E1EFFF;
+}
+.roadmap__color-3{
+    background:#F3F4DA;
+}
+.roadmap__color-4{
+    background:#F1E8FF;
+}

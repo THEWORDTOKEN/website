@@ -1,0 +1,66 @@
+.buycoin-hero{
+
+    &__title{
+        margin-bottom: 25px;
+
+        h1{
+            font-family: var(--secondary-font);
+            font-weight: 400;
+            font-size: 63.8px;
+            line-height: 78.11px;
+
+            @media screen and (max-width:900px){
+                font-size:29px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    &__subtitle{
+
+        h2{
+            font-size:36px;
+            color:#111315;
+            font-weight:500;
+            margin-bottom: 20px;
+        }
+        &--contract{
+            display:flex;
+            align-items:center;
+
+            & > div{
+                display:flex;
+                align-items: center;
+
+                a{
+                    background:#F3F4DA;
+                    padding:2px 6px;
+                    font-size:18px;
+                    margin: 0 4px;
+                }
+            }
+        }
+    }
+
+    &__summary{
+        display:flex;
+        column-gap: 25px;
+        margin-top:25px;
+
+        &--title{
+            margin-right: 5px;
+        }
+        &--value{
+            padding:4px 6px;
+            border-radius:4px;
+
+            &-1{
+                background:#DAF4E9;
+            }
+
+            &-2{
+                background: #F1E8FF;
+            }
+        }
+    }
+}

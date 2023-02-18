@@ -1,0 +1,70 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url(./assets/Aeonik-fonts/Aeonik-Regular.otf);
+}
+@font-face {
+  font-family: 'USD-OSD-Sans-Mono';
+  src: url(./assets/UAV-OSD-font/UAV-OSD-Sans-Mono.ttf);
+}
+
+:root{
+  --primary-font:'Aeonik';
+  --secondary-font:'USD-OSD-Sans-Mono';
+}
+
+
+.max-wrapper{
+  max-width:1600px;
+  margin:0 auto;
+}
+.max-wrapper__content{
+  width:94%;
+  margin:0 auto;
+}
+a,
+a:link,
+a:visited{
+  text-decoration: none;
+  color:#000;
+}
+
+.btn{
+  background:#DAF4E9;
+  height:50px;
+  width:110px; 
+  border-radius: 8px;
+  outline:none;
+  border:none;
+  text-align: center;
+}
+.btn-black{
+  background:#000;
+  padding:14px 25px;
+  border-radius: 8px;
+  outline:none;
+  border:none;
+  text-align: center;
+  font-size:16px;
+  color:#fff;
+  font-weight:400;
+  width:fit-content;
+}
+
+.margin-top{
+  margin-top:100px;  
+}

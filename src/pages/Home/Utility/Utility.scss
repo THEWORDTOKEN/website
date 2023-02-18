@@ -1,0 +1,43 @@
+.utility-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.utility-line{
+    position: absolute;
+    z-index: -1;
+
+    &-2{
+        bottom:-100px;
+    }
+
+    &-3{
+        right:0;
+        top:50px;
+    }
+}
+.utility{
+    margin:0 auto;
+    max-width: 869px;
+    text-align: center;
+
+    &__card{
+        background: #F3F4DA;
+        padding:50px;
+        border-radius: 8px;
+
+        @media screen and (max-width:900px){
+            padding:25px;
+        }
+        
+        &--title{
+            margin-bottom: 25px;
+        }
+        &--content{
+            font-size: 18px;
+
+            p:first-child{
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

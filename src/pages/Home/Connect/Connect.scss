@@ -1,0 +1,27 @@
+.connect{
+    margin-bottom:50px;
+
+    &__title{
+        text-align: center;
+
+        h1{
+            font-size: 36px;
+            font-weight:500;
+        }
+    }
+    &__links{
+        display:grid;
+        place-items: center;
+        margin-top: 20px;
+
+        a{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+
+            img{
+                height:40px;
+            }
+        }
+    }
+}
