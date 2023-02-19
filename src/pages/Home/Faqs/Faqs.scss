@@ -51,6 +51,7 @@
         color:#111315;
         font-weight:500;
     }
+
     &-content{
         transition: 250ms ease-in;
         overflow:hidden;
@@ -61,5 +62,12 @@
         &:not(.effect){
             display:none;
         }
+    }
+}
+.accordion-indicator{
+    transition:250ms ease-in;
+
+    &.active{
+        transform:rotate(180deg);
     }
 }
