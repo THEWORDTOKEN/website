@@ -1,0 +1,45 @@
+.steps{
+
+    &__step{
+        margin-bottom: 100px;
+        
+        &--block{
+            width:50%;
+            display:flex;
+            flex-wrap:wrap;
+            column-gap: 10px;
+            row-gap: 25px;
+
+            @media screen and (max-width:900px){
+                width:100%;
+            }
+
+            &.display-right{
+                margin-left: auto;
+
+                @media screen and (max-width:900px){
+                    margin-left:0;
+                }
+            }
+
+            &-content{
+                max-width:360px;
+
+                span{
+                    word-break: break-all;
+                }
+            }
+
+            &-img{
+                flex:1;
+
+                img{
+                // max-height:450px;
+                // max-width:207px;
+                // width: 100%;
+            }
+            }
+            
+        }
+    }
+}
