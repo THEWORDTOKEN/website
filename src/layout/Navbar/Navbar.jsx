@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="navigation__links">
             <Link to='/'>Home</Link>
             <a href='#about-token'>About Token</a>
-            <a href='#audit'>Audit</a>
+            <Link to='https://solidity.finance/audits/THEWORD/'>Audit</Link>
             <Link to='/buycoin'>How to Buy</Link>
             <a href='#roadmap'>Road Map</a>
             <Link>
@@ -50,10 +50,10 @@ const Navbar = () => {
         </div>
         <div className="mobile-navigation__links">
           <Link to='/'>Home</Link>
-          <a href='#about-token'>About Token</a>
+          <a href='/#about-token'>About Token</a>
           <Link to='https://solidity.finance/audits/THEWORD/'>Audit</Link>
           <Link to='/buycoin'>How to Buy</Link>
-          <a href='#roadmap'>Road Map</a>
+          <a href='/#roadmap'>Road Map</a>
         </div>
         <div className="mobile-navigation__connect">
           <h1>Get in Touch</h1>

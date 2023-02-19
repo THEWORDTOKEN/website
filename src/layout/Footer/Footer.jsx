@@ -3,6 +3,7 @@ import './Footer.scss'
 import telegram_alt from '../../assets/telegram-alt.png'
 import mail_alt from '../../assets/mail-alt.png'
 import twitter_alt from '../../assets/twitter-alt.png'
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -26,16 +27,16 @@ const Footer = () => {
                 <div className="footer__links">
                     <div>
                         <h1>Navigation</h1>
-                        <a href="#">Home</a>
-                        <a href="#">About Token</a>
-                        <a href="#">Buy Now</a>
-                        <a href="#">Road Map</a>
+                        <Link to='/'>Home</Link>
+                        <a href="/#about-token">About Token</a>
+                        <Link to="buycoin">Buy Now</Link>
+                        <a href="/#roadmap">Road Map</a>
                     </div>
                     <div>
                         <h1>External Links</h1>
                         <a href="#">Download Whitepaper</a>
                         <a href="#">View $TWD Chart</a>
-                        <a href="#">Smart Contract Audit</a>
+                        <a href="https://solidity.finance/audits/THEWORD/">Smart Contract Audit</a>
                         <a href="#">Liquidity</a>
                     </div>
                 </div>

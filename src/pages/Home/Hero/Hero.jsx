@@ -14,7 +14,9 @@ const Hero = () => {
             <p>A digital asset for every Christian Community.
               The Word token has been created as God's strategy for the end-time wealth transfer and security - Securing the 7years Joseph strategy for the coming famine.</p>
             <div><img src={download} alt="download" /></div>
-            <button className="btn-black">Read our white paper</button>
+            <a href="https://thewordtoken.com/THE-WORD-TOKEN-WHITEPAPER-V1.pdf" target="_blank">
+              <button className="btn-black">Read our white paper</button>
+            </a>
           </div>
           <div className="hero__content--stats">
             <div className="hero__content--stats__box">
