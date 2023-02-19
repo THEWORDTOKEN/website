@@ -6,7 +6,7 @@ const Hero = () => {
     <header className="max-wrapper margin-top">
       <div className="max-wrapper__content hero">
         <div className="hero__title">
-          <div className="hero__title--h1"><h1>Welcome onboard your journey to Kingdom Wealth Creation.</h1></div>
+          <div className="hero__title--h1"><h1>Welcome onboard your journey to Kingdom Wealth Creation..</h1></div>
           <div className="hero__title--image"><img src={download} alt="download" /></div>
         </div>
         <div className="hero__content">
