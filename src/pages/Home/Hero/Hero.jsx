@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
             <div className="hero__content--stats__box">
               <div className="hero__content--stats__box--box">
-                <h1>30B</h1>
+                <h1>32B</h1>
                 <p>Burnt</p>
               </div>
             </div>
