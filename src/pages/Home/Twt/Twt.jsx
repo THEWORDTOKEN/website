@@ -6,7 +6,7 @@ import community from '../../../assets/community.png'
 import percentage from '../../../assets/percentage.png'
 const Twt = () => {
   return (
-    <section className="max-wrapper margin-top">
+    <section className="max-wrapper margin-top" id="about-token">
         <div className="max-wrapper__content twt">
             <div class="twt__main">
                 <h1 className="twt__main--title">The Word Token ($TWD)</h1>

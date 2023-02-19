@@ -13,10 +13,10 @@ const Navbar = () => {
 
   const [click, setClick] = useState(false)
 
-  const clickHandler = () =>{
+  const clickHandler = () => {
     setClick(true)
   }
-  const removeHandler = () =>{
+  const removeHandler = () => {
     setClick(false)
   }
 
@@ -28,11 +28,11 @@ const Navbar = () => {
             <img src={logo} alt="The Word Token logo" />
           </div>
           <div className="navigation__links">
-            <Link>Home</Link>
-            <Link>About Token</Link>
-            <Link>Audit</Link>
-            <Link>How to Buy</Link>
-            <Link>Road Map</Link>
+            <Link to='/'>Home</Link>
+            <a href='#about-token'>About Token</a>
+            <a href='#audit'>Audit</a>
+            <Link to='/buycoin'>How to Buy</Link>
+            <a href='#roadmap'>Road Map</a>
             <Link>
               <button className="btn">Buy Now</button>
             </Link>
@@ -49,11 +49,11 @@ const Navbar = () => {
           <span className="material-icons navigation__menu" onClick={removeHandler}>close</span>
         </div>
         <div className="mobile-navigation__links">
-          <Link>Home</Link>
-          <Link>About Token</Link>
-          <Link>Audit</Link>
-          <Link>How to Buy</Link>
-          <Link>Road Map</Link>
+          <Link to='/'>Home</Link>
+          <a href='#about-token'>About Token</a>
+          <a href='#audit'>Audit</a>
+          <Link to='/buycoin'>How to Buy</Link>
+          <a href='#roadmap'>Road Map</a>
         </div>
         <div className="mobile-navigation__connect">
           <h1>Get in Touch</h1>

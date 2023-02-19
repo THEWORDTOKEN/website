@@ -3,7 +3,7 @@ import './Roadmap.scss'
 
 const Roadmap = () => {
   return (
-    <div className="max-wrapper">
+    <div className="max-wrapper" id="roadmap">
         <div className="max-wrapper__content roadmap">
             <div className="roadmap__title">
                 <h1>Roadmap</h1>

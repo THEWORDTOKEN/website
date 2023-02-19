@@ -38,7 +38,7 @@ const Faqs = () => {
     }, [])
 
     return (
-        <div className="max-wrapper margin-top">
+        <div className="max-wrapper margin-top" id="audit">
             <div className="max-wrapper__content faqs margin-top">
                 <div className="faqs__title">
                     <h1>FAQS</h1>

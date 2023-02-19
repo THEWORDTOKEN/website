@@ -11,6 +11,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -41,6 +42,7 @@ a:link,
 a:visited{
   text-decoration: none;
   color:#000;
+  cursor:pointer;
 }
 
 .btn{
