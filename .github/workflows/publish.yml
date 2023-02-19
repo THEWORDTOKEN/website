@@ -27,4 +27,4 @@ jobs:
           cd /var/www/thewordtoken.com
           git pull
           npm i --legacy-peer-deps
-          npm run build
+          npm run build --base=./
