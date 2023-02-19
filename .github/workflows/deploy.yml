@@ -5,9 +5,9 @@ name: Website deployment
 
 on:
   push:
-    branches: [ master ]
+    branches: [ react ]
   pull_request:
-    branches: [ master ]
+    branches: [ react ]
 
 jobs:
   deploy:
@@ -25,4 +25,6 @@ jobs:
         port: ${{ secrets.DIGITALOCEAN_PORT }}
         script: |
           cd /var/www/thewordtoken.com
-          git pull origin master
+          git pull
+          npm i --legacy-peer
+          npm run build
