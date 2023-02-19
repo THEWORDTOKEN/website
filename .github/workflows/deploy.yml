@@ -5,9 +5,9 @@ name: Website deployment
 
 on:
   push:
-    branches: [ react ]
+    branches: [ master ]
   pull_request:
-    branches: [ react ]
+    branches: [ master ]
 
 jobs:
   deploy:
@@ -26,5 +26,3 @@ jobs:
         script: |
           cd /var/www/thewordtoken.com
           git pull
-          npm i --legacy-peer
-          npm run build
