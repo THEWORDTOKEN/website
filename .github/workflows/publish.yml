@@ -27,4 +27,5 @@ jobs:
           cd /var/www/thewordtoken.com
           git pull
           npm i --legacy-peer-deps
-          npm run build --base=./
+          npm run build
+          cp THE-WORD-TOKEN-WHITEPAPER-V1.pdf ./dist/THE-WORD-TOKEN-WHITEPAPER-V1.pdf
