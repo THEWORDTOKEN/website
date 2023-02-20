@@ -33,9 +33,9 @@ const Navbar = () => {
             <Link to='https://solidity.finance/audits/THEWORD/'>Audit</Link>
             <Link to='/buycoin'>How to Buy</Link>
             <a href='#roadmap'>Road Map</a>
-            <Link>
+            <a href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0xf00cD9366A13e725AB6764EE6FC8Bd21dA22786e" target="_blank">
               <button className="btn">Buy Now</button>
-            </Link>
+            </a>
           </div>
           <span className="material-icons navigation__menu" onClick={clickHandler}>menu</span>
         </div>
@@ -49,11 +49,11 @@ const Navbar = () => {
           <span className="material-icons navigation__menu" onClick={removeHandler}>close</span>
         </div>
         <div className="mobile-navigation__links">
-          <Link to='/'>Home</Link>
-          <a href='/#about-token'>About Token</a>
-          <Link to='https://solidity.finance/audits/THEWORD/'>Audit</Link>
-          <Link to='/buycoin'>How to Buy</Link>
-          <a href='/#roadmap'>Road Map</a>
+          <Link to='/' onClick={removeHandler}>Home</Link>
+          <a href='/#about-token' onClick={removeHandler}>About Token</a>
+          <Link to='https://solidity.finance/audits/THEWORD/' onClick={removeHandler}>Audit</Link>
+          <Link to='/buycoin' onClick={removeHandler}>How to Buy</Link>
+          <a href='/#roadmap' onClick={removeHandler}>Road Map</a>
         </div>
         <div className="mobile-navigation__connect">
           <h1>Get in Touch</h1>
@@ -61,12 +61,12 @@ const Navbar = () => {
             <Link>
               <img src={telegram} alt="The Word Token Telegram Link" />
             </Link>
-            <Link>
+            <a href="https://twitter.com/twdtoken" target="_blank">
               <img src={twitter} alt="The Word Token Twitter Link" />
-            </Link>
-            <Link>
+            </a>
+            <a href='mailto:Support@thewordtoken.com' target='_blank'>
               <img src={mail} alt="The Word Token Mail Link" />
-            </Link>
+            </a>
             <Link>
               <img src={tiktok} alt="The Word Token Tiktok Link" />
             </Link>

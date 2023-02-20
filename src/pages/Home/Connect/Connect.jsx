@@ -18,10 +18,10 @@ const Connect = () => {
                 <a href="#">
                     <img src={telegram} alt="The Word Token Telegram link"/>
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/twdtoken">
                     <img src={twitter} alt="The Word Token Twitter link"/>
                 </a>
-                <a href="#">
+                <a href="mailto:Support@thewordtoken.com">
                     <img src={mail} alt="The Word Token Mail link"/>
                 </a>
                 <a href="#">

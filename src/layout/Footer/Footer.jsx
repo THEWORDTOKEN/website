@@ -19,8 +19,8 @@ const Footer = () => {
                         <h1>Get in touch</h1>
                         <div>
                             <a href='#'><img src={telegram_alt} alt="Telegram"/></a>
-                            <a href='#'><img src={mail_alt} alt="Mail"/></a>
-                            <a href='#'><img src={twitter_alt} alt="Twitter"/></a>
+                            <a href='mailto:Support@thewordtoken.com'><img src={mail_alt} alt="Mail"/></a>
+                            <a href='https://twitter.com/twdtoken'><img src={twitter_alt} alt="Twitter"/></a>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ const Footer = () => {
                         <h1>Navigation</h1>
                         <Link to='/'>Home</Link>
                         <a href="/#about-token">About Token</a>
-                        <Link to="buycoin">Buy Now</Link>
+                        <a href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0xf00cD9366A13e725AB6764EE6FC8Bd21dA22786e" target="_blank">Buy Now</a>
                         <a href="/#roadmap">Road Map</a>
                     </div>
                     <div>

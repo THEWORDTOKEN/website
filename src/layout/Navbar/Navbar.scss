@@ -11,6 +11,10 @@
                 margin-right: 30px;
             }
 
+            &:hover{
+                color:dodgerblue;
+            }
+
             @media screen and (max-width: 900px){
                 display:none;
             }

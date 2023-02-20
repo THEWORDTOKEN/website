@@ -10,7 +10,7 @@ const Utility = () => {
                 <img src={line2} className='utility-line utility-line-2'/>
                 <img src={line3} className='utility-line utility-line-3'/>
             <div className="max-wrapper__content utility">
-                <div class="utility__card">
+                <div className="utility__card">
                     <div className="utility__card--title">
                         <h1> 📖 Utility ✨</h1>
                     </div>

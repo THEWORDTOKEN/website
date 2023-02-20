@@ -51,8 +51,12 @@ a:visited{
   width:110px; 
   border-radius: 8px;
   outline:none;
-  border:none;
+  border:1px solid #DAF4E9;
   text-align: center;
+
+  &:hover{
+    border:1px solid dodgerblue;
+  }
 }
 .btn-black{
   background:#000;
@@ -65,8 +69,17 @@ a:visited{
   color:#fff;
   font-weight:400;
   width:fit-content;
+  border:1px solid #000;
+
+  &:hover{
+    border:1px solid dodgerblue;
+  }
 }
 
 .margin-top{
   margin-top:100px;  
+}
+
+.material-icons{
+  cursor:pointer;
 }
