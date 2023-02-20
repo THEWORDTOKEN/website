@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <h1>External Links</h1>
-                        <a href="https://thewordtoken.com/THE-WORD-TOKEN-WHITEPAPER-V1.pdf">Download Whitepaper</a>
+                        <a href="https://thewordtoken.com/THE-WORD-TOKEN-WHITEPAPER-V1.pdf" target="_blank">Download Whitepaper</a>
                         <a href="#">View $TWD Chart</a>
                         <a href="https://solidity.finance/audits/THEWORD/">Smart Contract Audit</a>
                         <a href="#">Liquidity</a>
