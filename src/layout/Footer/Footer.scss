@@ -38,9 +38,11 @@
                 &:not(:last-child){
                     margin-right: 10px;
                 }
+                svg{
 
-                img{
-                    height:30px;
+                    &:hover path{
+                        stroke: dodgerblue;
+                    }
                 }
             }
         }
