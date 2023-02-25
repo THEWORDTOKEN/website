@@ -38,6 +38,9 @@ const Footer = () => {
                         <a href="#">View $TWD Chart</a>
                         <a href="https://solidity.finance/audits/THEWORD/">Smart Contract Audit</a>
                         <a href="#">Liquidity</a>
+                        <a href="https://t.me/TWDtraininggroup" target="_blank">Training</a>
+                        <a href="https://t.me/TWDP2P" target="_blank">Peer to peer/Marketplace</a>
+                        <a href="https://t.me/thewordcryptotoken" target="_blank">Community</a>
                     </div>
                 </div>
             </div>
