@@ -15,7 +15,7 @@ const Connect = () => {
             </div>
             <div className="connect__links">
                 <div>
-                <a href="#">
+                <a href="https://t.me/thewordcryptotoken">
                     <img src={telegram} alt="The Word Token Telegram link"/>
                 </a>
                 <a href="https://twitter.com/twdtoken">
