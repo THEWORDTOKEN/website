@@ -15,10 +15,10 @@ const Connect = () => {
             </div>
             <div className="connect__links">
                 <div>
-                <a href="https://t.me/thewordcryptotoken">
+                <a href="https://t.me/thewordcryptotoken" target="_blank">
                     <img src={telegram} alt="The Word Token Telegram link"/>
                 </a>
-                <a href="https://twitter.com/twdtoken">
+                <a href="https://twitter.com/twdtoken" target="_blank">
                     <img src={twitter} alt="The Word Token Twitter link"/>
                 </a>
                 <a href="mailto:Support@thewordtoken.com">
