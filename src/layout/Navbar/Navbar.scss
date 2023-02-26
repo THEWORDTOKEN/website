@@ -105,6 +105,11 @@
 
             img{
                 height:40px;
+                transition:150ms ease-in;
+
+                &:hover{
+                    transform:scale(.8);
+                }
             }
         }
     }

@@ -79,7 +79,7 @@ const Steps = () => {
               </div>
             </div>
           </div>
-          <div className="steps__step">
+          <div className="steps__step" id="step-7">
             <div className="steps__step--block">
               <div className="steps__step--block-content">
                 <h1>STEP SEVEN</h1>
@@ -98,6 +98,14 @@ const Steps = () => {
               </div>
               <div className="steps__step--block-img">
                 <img src={step8} alt="Step 8"/>
+              </div>
+            </div>
+          </div>
+          <div className="steps__step">
+            <div className="steps__step--block">
+              <div className="steps__step--block-content">
+                <h1>ALSO</h1>
+                <p>You can purchase TWD Token by Clicking Here. or you can copy the link here to your trust wallet DApps browser and continuing from <a href="#step-7">Step 7</a> above.</p>
               </div>
             </div>
           </div>

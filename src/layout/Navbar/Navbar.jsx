@@ -58,9 +58,9 @@ const Navbar = () => {
         <div className="mobile-navigation__connect">
           <h1>Get in Touch</h1>
           <div>
-            <Link>
+            <a href="https://t.me/thewordcryptotoken" target="_blank">
               <img src={telegram} alt="The Word Token Telegram Link" />
-            </Link>
+            </a>
             <a href="https://twitter.com/twdtoken" target="_blank">
               <img src={twitter} alt="The Word Token Twitter Link" />
             </a>

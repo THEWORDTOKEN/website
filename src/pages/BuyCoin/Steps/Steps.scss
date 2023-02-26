@@ -25,6 +25,19 @@
             &-content{
                 max-width:360px;
 
+                h1{
+                    font-family:var(--secondary-font);
+                }
+
+                p{
+                    font-size: 18px;
+                    padding-top: 10px;
+                }
+
+                a{
+                    border-bottom:1px solid #000;
+                }
+
                 span{
                     word-break: break-all;
                 }
@@ -32,12 +45,6 @@
 
             &-img{
                 flex:1;
-
-                img{
-                // max-height:450px;
-                // max-width:207px;
-                // width: 100%;
-            }
             }
             
         }
