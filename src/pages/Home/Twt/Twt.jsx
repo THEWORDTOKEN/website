@@ -39,7 +39,7 @@ const Twt = () => {
                 </div>
                 <div className="twt__cards--card">
                     <div>
-                    <img src={community} alt="Launch"/>
+                    <img src={percentage} alt="Launch"/>
                     <h2>7% Slippage</h2>
                     </div>
                     <p>Currently, the slippage rate for The Word Token is only 7%. 1% goes back to liquidity pool, 1% is shared to all holders, 4% to Dev Wallet (for marketing, community and partnership).</p>
