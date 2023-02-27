@@ -1,5 +1,42 @@
 .roadmap{
 
+    &__intro{
+        display:grid;
+        place-items:center;
+        margin-bottom:100px;
+
+        & > div{
+            display:flex;
+            align-items:center;
+            column-gap:20px;
+            row-gap:20px;
+
+            @media screen and (max-width:768px){
+                flex-direction:column;
+            }
+
+            h2{
+                font-weight:700;
+                color:#484848;
+                text-align:center;
+            }
+
+            & > span{
+                display:flex;
+                align-items:center;
+                column-gap:30px; 
+
+                img{
+                   transition:transform 150ms ease-in;
+                   
+                   &:hover{
+                    transform: scale(.8);
+                   }
+                }
+            }
+        }
+    }
+
     &__title{
         text-align: center;
         padding-bottom: 50px;
