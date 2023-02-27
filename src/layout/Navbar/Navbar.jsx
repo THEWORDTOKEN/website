@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="navigation__links">
             <Link to='/'>Home</Link>
             <a href='#about-token'>About Token</a>
-            <Link to='https://solidity.finance/audits/THEWORD/'>Audit</Link>
+            <Link to='https://solidity.finance/audits/THEWORD/'>Merch</Link>
             <Link to='/buycoin'>How to Buy</Link>
             <a href='#roadmap'>Road Map</a>
             <a href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0xf00cD9366A13e725AB6764EE6FC8Bd21dA22786e" target="_blank">
@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="mobile-navigation__links">
           <Link to='/' onClick={removeHandler}>Home</Link>
           <a href='/#about-token' onClick={removeHandler}>About Token</a>
-          <Link to='https://solidity.finance/audits/THEWORD/' onClick={removeHandler}>Audit</Link>
+          <a href='https://solidity.finance/audits/THEWORD/' target="_blank" onClick={removeHandler}>Merch</a>
           <Link to='/buycoin' onClick={removeHandler}>How to Buy</Link>
           <a href='/#roadmap' onClick={removeHandler}>Road Map</a>
         </div>
