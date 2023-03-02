@@ -65,7 +65,7 @@ const Navbar = () => {
             <a href="https://t.me/thewordcryptotoken" target="_blank">
               <img src={telegram} alt="The Word Token Telegram Link" />
             </a>
-            <a href="https://twitter.com/twdtoken" target="_blank">
+            <a href="https://twitter.com/newTWDtoken" target="_blank">
               <img src={twitter} alt="The Word Token Twitter Link" />
             </a>
             <a href='mailto:Support@thewordtoken.com' target='_blank'>

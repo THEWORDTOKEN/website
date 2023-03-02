@@ -20,7 +20,8 @@ const Merch = () => {
                         <img src={cloth_2} alt="The Word Token Merch cloth"/>
                         <img src={cloth_3} alt="The Word Token Merch cloth"/>
                     </div>
-                    <button className={styles.merch__btn}>Buy Now</button>
+                    <a target="_blank" href="https://instagram.com/mzconglomerate?igshid=YmMyMTA2M2Y=" className={styles.merch__btnWrap}><button className={styles.merch__btn}>Buy Now</button></a>
+                    
                 </div>
             </div>
             <Connect/>

@@ -18,7 +18,7 @@ const Connect = () => {
                 <a href="https://t.me/thewordcryptotoken" target="_blank">
                     <img src={telegram} alt="The Word Token Telegram link"/>
                 </a>
-                <a href="https://twitter.com/twdtoken" target="_blank">
+                <a href="https://twitter.com/newTWDtoken" target="_blank">
                     <img src={twitter} alt="The Word Token Twitter link"/>
                 </a>
                 <a href="mailto:Support@thewordtoken.com">
