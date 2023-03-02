@@ -22,15 +22,17 @@ const Navbar = () => {
 
   return (
     <>
+    {/* Desktop Navigation */}
       <nav className="max-wrapper">
         <div className="max-wrapper__content navigation">
           <div className="navigation__logo">
-            <img src={logo} alt="The Word Token logo" />
+            <Link to='/'><img src={logo} alt="The Word Token logo" /></Link>
           </div>
           <div className="navigation__links">
             <Link to='/'>Home</Link>
             <a href='#about-token'>About Token</a>
-            <Link to='https://solidity.finance/audits/THEWORD/'>Merch</Link>
+            <Link to='/merch'>Merch</Link>
+            {/* <Link to='https://solidity.finance/audits/THEWORD/'>Merch</Link> */}
             <Link to='/buycoin'>How to Buy</Link>
             <a href='#roadmap'>Road Map</a>
             <a href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0xf00cD9366A13e725AB6764EE6FC8Bd21dA22786e" target="_blank">
@@ -41,17 +43,19 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* Navigation Backdrop */}
       <div className={click ? "mobile-navigation-backdrop active" : "mobile-navigation-backdrop"} onClick={removeHandler}></div>
 
+      {/* Mobile Navigation  */}
       <nav className={click ? "mobile-navigation active" : "mobile-navigation"}>
         <div className="mobile-navigation__title">
-          <img src={logo} alt="The Word Token logo" />
+          <Link to='/'><img src={logo} alt="The Word Token logo" /></Link>
           <span className="material-icons navigation__menu" onClick={removeHandler}>close</span>
         </div>
         <div className="mobile-navigation__links">
           <Link to='/' onClick={removeHandler}>Home</Link>
           <a href='/#about-token' onClick={removeHandler}>About Token</a>
-          <a href='https://solidity.finance/audits/THEWORD/' target="_blank" onClick={removeHandler}>Merch</a>
+          <Link to='/merch' onClick={removeHandler}>Merch</Link>
           <Link to='/buycoin' onClick={removeHandler}>How to Buy</Link>
           <a href='/#roadmap' onClick={removeHandler}>Road Map</a>
         </div>

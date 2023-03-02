@@ -1,0 +1,41 @@
+.merch__title{
+    margin-top:50px;
+    font-size:63.8px;
+    font-family: var(--secondary-font);
+
+    @media screen and (max-width:900px){
+        font-size:29px;
+        line-height: 35px;
+    }
+}
+.merch__cloths{
+    margin-top:50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    column-gap: 25px;
+    row-gap: 25px;
+
+    img{
+        width:100%;
+        max-width:394px;
+        max-height:407px;
+    }
+}
+.merch__btn{
+    color:#fff;
+    font-size:20px;
+    margin:50px auto;
+    display:block;
+    border-radius:10px;
+    background: #111315;
+    border:none;
+    padding:15px 20px;
+
+    &:hover{
+        background: #666;
+    }
+    @media screen and (max-width:900px){
+        font-size: 16px;
+    }
+}

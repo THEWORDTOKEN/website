@@ -4,6 +4,7 @@ import './App.css'
 import Home from './pages/Home/Home'
 import BuyCoin from './pages/BuyCoin/BuyCoin'
 import Riskwarning from './pages/Riskwarning/Riskwarning'
+import Merch from './pages/Merch/Merch'
 
 
 function App() {
@@ -29,6 +30,7 @@ const AllRoutes = () => {
       <Route exact path='/' element={<Home />} />
       <Route path='/buycoin' element={<BuyCoin />} />
       <Route path='/risk-warning' element={<Riskwarning />} />
+      <Route path='/merch' element={<Merch />} />
     </Routes>
   )
 }
