@@ -29,7 +29,7 @@ const AllRoutes = () => {
     <Routes>
       <Route exact path='/' element={<Home />} />
       <Route path='/buycoin' element={<BuyCoin />} />
-      <Route path='/riskwarning' element={<Riskwarning />} />
+      <Route path='/risk-warning' element={<Riskwarning />} />
       <Route path='/merch' element={<Merch />} />
     </Routes>
   )

@@ -43,7 +43,7 @@ const Footer = () => {
                             <a href='https://solidity.finance/audits/THEWORD/' target="_blank">Merch</a>
                             <a href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0xf00cD9366A13e725AB6764EE6FC8Bd21dA22786e" target="_blank">Buy Now</a>
                             <a href="/#roadmap">Road Map</a>
-                            <a href='/riskwarning'>Risk Warning</a>
+                            <Link to='/risk-warning'>Risk Warning</Link>
                         </div>
                         <div>
                             <h1>External Links</h1>
