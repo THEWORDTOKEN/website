@@ -1,6 +1,8 @@
 import React from 'react'
 import './Hero.scss'
 import download from '../../../assets/download.png'
+
+
 const Hero = () => {
   return (
     <header className="max-wrapper margin-top">
@@ -13,7 +15,7 @@ const Hero = () => {
           <div className="hero__content--main">
             <p>A digital asset for every Christian Community.
               The Word token has been created as God's strategy for the end-time wealth transfer and security - Securing the 7years Joseph strategy for the coming famine.</p>
-            <div><img src={download} alt="download" /></div>
+            <div><img src={download} alt="download" className="hero__content--main__download"/></div>
             <a href="https://thewordtoken.com/THE-WORD-TOKEN-WHITEPAPER-V1.pdf" target="_blank">
               <button className="btn-black">Read our white paper</button>
             </a>

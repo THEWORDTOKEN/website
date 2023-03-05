@@ -66,8 +66,25 @@
             }
 
             img{
+
                 @media screen and (max-width:900px){
                     display:none;
+                }
+            }
+
+            &__download{
+                animation:download 1000ms linear infinite;
+
+                @keyframes download{
+                    0%{
+                        transform: scale(.8)
+                    }
+                    50%{
+                        transform: scale(1)
+                    }
+                    100%{
+                        transform: scale(.8)
+                    }
                 }
             }
         }
