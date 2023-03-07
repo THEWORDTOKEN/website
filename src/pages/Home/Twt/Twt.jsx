@@ -21,7 +21,7 @@ const Twt = () => {
                         <img src={rocket} alt="Launch"/>
                     <h2>Fair Launch</h2>
                     </div>
-                    <p>We have launched The Word Token fairly for everyone, no presale and/or private sale. We have decided that everyone should have a fair chance at getting into the market to purchase ou token. The Word Token is available for everyone on PancakeSwap V2 using the correct contract address.</p>
+                    <p>We have launched The Word Token fairly for everyone, no presale and/or private sale. We have decided that everyone should have a fair chance at getting into the market to purchase our token. The Word Token is available for everyone on PancakeSwap V2 using the correct contract address.</p>
                 </div>
                 <div className="twt__cards--card">
                     <div>
