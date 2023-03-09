@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="max-wrapper__content hero">
         <div className="hero__title">
           <div className="hero__title--h1"><h1>Welcome onboard your journey to Kingdom Wealth Creation.</h1></div>
-          <div className="hero__title--image"><img src={download} alt="download" className="hero__download--icon"/></div>
+          <div className="hero__title--image"><img src={download} alt="download" className="hero__download--icon-mobile"/></div>
         </div>
         <div className="hero__content">
           <div className="hero__content--main">

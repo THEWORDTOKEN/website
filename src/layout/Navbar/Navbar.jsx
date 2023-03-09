@@ -53,7 +53,7 @@ const Navbar = () => {
                 <span>Utilities</span>
                 <span className="material-icons"> expand_more </span>
                 <div className="navigation-dropdown">
-                  <div><Link to='/'>Staking</Link></div>
+                  <div><a href='https://app.thewordtoken.com/'>Staking</a></div>
                   <div><Link to='/'>Read-to-Earn</Link></div>
                   <div><Link to='/'>AI Model</Link></div>
                   <div><Link to='/'>Social Ecosystem</Link></div>
@@ -96,7 +96,7 @@ const Navbar = () => {
           <div className="mobile-navigation__accordion">
             <h3 className="mobile-navigation__accordion-title mobile-navigation__links--link">UTILITIES <span><span className="material-icons mobile-navigation-accordion-indicator">expand_more</span></span></h3>
             <div className="mobile-navigation__accordion-content">
-              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Staking</Link></div>
+              <div className="mobile-navigation__sublink"><a href='https://app.thewordtoken.com/' onClick={removeHandler}>Staking</a></div>
               <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Read-to-Earn</Link></div>
               <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>AI Model</Link></div>
               <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Social Ecosystem</Link></div>

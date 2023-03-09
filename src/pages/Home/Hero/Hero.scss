@@ -186,6 +186,21 @@
 
     @keyframes download{
         0%{
+            transform: scale(.8)
+        }
+        50%{
+            transform: scale(1)
+        }
+        100%{
+            transform: scale(.8)
+        }
+    }
+}
+.hero__download--icon-mobile{
+    animation:download-mobile 1000ms linear infinite;
+
+    @keyframes download-mobile{
+        0%{
             transform: rotate(45deg) scale(.8)
         }
         50%{
