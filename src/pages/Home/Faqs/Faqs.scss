@@ -26,6 +26,7 @@
     }
 }
 
+
 .faqs__content--accordion{
     padding:20px;
     border:1px solid #F5F5F5;
@@ -65,7 +66,7 @@
         }
     }
 }
-.accordion-indicator{
+.faqs-accordion-indicator{
     transition:250ms ease-in;
 
     &.active{
