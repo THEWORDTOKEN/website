@@ -89,18 +89,18 @@ const Navbar = () => {
           <div className="mobile-navigation__accordion">
             <h3 className="mobile-navigation__accordion-title mobile-navigation__links--link">$TWD MARKETPLACE <span><span className="material-icons mobile-navigation-accordion-indicator">expand_more</span></span></h3>
             <div className="mobile-navigation__accordion-content">
-              <div className="mobile-navigation__sublink">P2P MarketPlace</div>
-              <div className="mobile-navigation__sublink">$TWD Merch</div>
+              <div className="mobile-navigation__sublink"><a href="https://t.me/TWDP2P" target="_blank" onClick={removeHandler}>P2P MarketPlace</a></div>
+              <div className="mobile-navigation__sublink"><Link to='/merch' onClick={removeHandler}>$TWD Merch</Link></div>
             </div>
           </div>
           <div className="mobile-navigation__accordion">
             <h3 className="mobile-navigation__accordion-title mobile-navigation__links--link">UTILITIES <span><span className="material-icons mobile-navigation-accordion-indicator">expand_more</span></span></h3>
             <div className="mobile-navigation__accordion-content">
-              <div className="mobile-navigation__sublink">Staking</div>
-              <div className="mobile-navigation__sublink">Read-to-Earn</div>
-              <div className="mobile-navigation__sublink">AI Model</div>
-              <div className="mobile-navigation__sublink">Social Ecosystem</div>
-              <div className="mobile-navigation__sublink">Building Goshen</div>
+              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Staking</Link></div>
+              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Read-to-Earn</Link></div>
+              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>AI Model</Link></div>
+              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Social Ecosystem</Link></div>
+              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Building Goshen</Link></div>
             </div>
           </div>
           <div className="mobile-navigation__links--link"><Link to='/buycoin' onClick={removeHandler}>How to Buy</Link></div>
