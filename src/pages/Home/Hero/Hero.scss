@@ -71,22 +71,6 @@
                     display:none;
                 }
             }
-
-            &__download{
-                animation:download 1000ms linear infinite;
-
-                @keyframes download{
-                    0%{
-                        transform: scale(.8)
-                    }
-                    50%{
-                        transform: scale(1)
-                    }
-                    100%{
-                        transform: scale(.8)
-                    }
-                }
-            }
         }
 
         &--stats{
@@ -191,6 +175,24 @@
                     }
                 }
             }
+        }
+    }
+}
+
+// Download icon animation
+
+.hero__download--icon{
+    animation:download 1000ms linear infinite;
+
+    @keyframes download{
+        0%{
+            transform: rotate(45deg) scale(.8)
+        }
+        50%{
+            transform: rotate(45deg) scale(1)
+        }
+        100%{
+            transform: rotate(45deg) scale(.8)
         }
     }
 }

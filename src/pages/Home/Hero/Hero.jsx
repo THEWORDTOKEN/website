@@ -9,13 +9,13 @@ const Hero = () => {
       <div className="max-wrapper__content hero">
         <div className="hero__title">
           <div className="hero__title--h1"><h1>Welcome onboard your journey to Kingdom Wealth Creation.</h1></div>
-          <div className="hero__title--image"><img src={download} alt="download" /></div>
+          <div className="hero__title--image"><img src={download} alt="download" className="hero__download--icon"/></div>
         </div>
         <div className="hero__content">
           <div className="hero__content--main">
             <p>A digital asset for every Christian Community.
               The Word token has been created as God's strategy for the end-time wealth transfer and security - Securing the 7years Joseph strategy for the coming famine.</p>
-            <div><img src={download} alt="download" className="hero__content--main__download"/></div>
+            <div><img src={download} alt="download" className="hero__download--icon"/></div>
             <a href="https://thewordtoken.com/THE-WORD-TOKEN-WHITEPAPER-V1.pdf" target="_blank">
               <button className="btn-black">Read our white paper</button>
             </a>
