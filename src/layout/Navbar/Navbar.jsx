@@ -2,13 +2,8 @@ import React, { useState, useEffect } from 'react'
 import logo from '../../assets/twt-logo.png'
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
-import telegram from '../../assets/telegram.png'
-import twitter from '../../assets/twitter.png'
-import mail from '../../assets/mail.png'
-import discord from '../../assets/discord.png'
-import tiktok from '../../assets/tiktok.png'
-import youtube from '../../assets/youtube.png'
 import { accordion_nav } from '../../utils/accordion'
+import { socialLinks, utilitiesLinks } from './NavbarData'
 
 const Navbar = () => {
 
@@ -22,8 +17,8 @@ const Navbar = () => {
     setClick(false)
   }
 
-  
-  useEffect(()=>{
+
+  useEffect(() => {
     accordion_nav(".mobile-navigation__accordion-title")
   }, [])
 
@@ -39,7 +34,7 @@ const Navbar = () => {
           <div className="navigation__links">
             <a href='#about-token'>About Token</a>
             <div className="navigation__links--link">
-              <div class="navigation__links--link__item">
+              <div className="navigation__links--link__item">
                 <span>$TWD MarketPlace</span>
                 <span className="material-icons"> expand_more </span>
                 <div className="navigation-dropdown">
@@ -53,15 +48,14 @@ const Navbar = () => {
                 <span>Utilities</span>
                 <span className="material-icons"> expand_more </span>
                 <div className="navigation-dropdown">
-                  <div><a href='https://app.thewordtoken.com/'>Staking</a></div>
-                  <div><Link to='/'>Read-to-Earn</Link></div>
-                  <div><Link to='/'>AI Model</Link></div>
-                  <div><Link to='/'>Social Ecosystem</Link></div>
-                  <div><Link to='/'>Building Goshen</Link></div>
+                  {
+                    utilitiesLinks.map((utilitiesLink, index) => (
+                      <div key={index}><Link to={utilitiesLink.url}>{utilitiesLink.label}</Link></div>
+                    ))
+                  }
                 </div>
               </div>
             </div>
-            {/* <Link to='/merch'>Merch</Link> */}
             {/* <a href='https://solidity.finance/audits/THEWORD/' target="_blank">Audit</a> */}
             <Link to='/buycoin'>How to Buy</Link>
             <a href='#roadmap'>Road Map</a>
@@ -73,11 +67,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Navigation Backdrop */}
-
-      <div className={click ? "mobile-navigation-backdrop active" : "mobile-navigation-backdrop"} onClick={removeHandler}></div>
-
       {/* Mobile Navigation  */}
+
       <nav className={click ? "mobile-navigation active" : "mobile-navigation"}>
         <div className="mobile-navigation__title">
           <Link to='/'><img src={logo} alt="The Word Token logo" /></Link>
@@ -85,7 +76,8 @@ const Navbar = () => {
         </div>
         <div className="mobile-navigation__links">
           <div className="mobile-navigation__links--link"><Link to='/' onClick={removeHandler}>Home</Link></div>
-          <div className="mobile-navigation__links--link"><a href='/#about-token' onClick={removeHandler}>About Token</a></div>
+          <div className="mobile-navigation__links--link"><Link to='/#about-token' onClick={removeHandler}>About Token</Link></div>
+
           <div className="mobile-navigation__accordion">
             <h3 className="mobile-navigation__accordion-title mobile-navigation__links--link">$TWD MARKETPLACE <span><span className="material-icons mobile-navigation-accordion-indicator">expand_more</span></span></h3>
             <div className="mobile-navigation__accordion-content">
@@ -96,40 +88,35 @@ const Navbar = () => {
           <div className="mobile-navigation__accordion">
             <h3 className="mobile-navigation__accordion-title mobile-navigation__links--link">UTILITIES <span><span className="material-icons mobile-navigation-accordion-indicator">expand_more</span></span></h3>
             <div className="mobile-navigation__accordion-content">
-              <div className="mobile-navigation__sublink"><a href='https://app.thewordtoken.com/' onClick={removeHandler}>Staking</a></div>
-              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Read-to-Earn</Link></div>
-              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>AI Model</Link></div>
-              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Social Ecosystem</Link></div>
-              <div className="mobile-navigation__sublink"><Link to='/' onClick={removeHandler}>Building Goshen</Link></div>
+              {
+                utilitiesLinks.map((utilitiesLink, index) => (
+                  <div key={index} className="mobile-navigation__sublink"><a href={utilitiesLink.url} onClick={removeHandler}>{utilitiesLink.label}</a></div>
+                ))
+              }
             </div>
           </div>
           <div className="mobile-navigation__links--link"><Link to='/buycoin' onClick={removeHandler}>How to Buy</Link></div>
           <div className="mobile-navigation__links--link"><a href='/#roadmap' onClick={removeHandler}>Road Map</a></div>
         </div>
+
         <div className="mobile-navigation__connect">
           <h1>Get in Touch</h1>
           <div>
-            <a href="https://t.me/thewordcryptotoken" target="_blank">
-              <img src={telegram} alt="The Word Token Telegram Link" />
-            </a>
-            <a href="https://twitter.com/newTWDtoken" target="_blank">
-              <img src={twitter} alt="The Word Token Twitter Link" />
-            </a>
-            <a href='mailto:Support@thewordtoken.com' target='_blank'>
-              <img src={mail} alt="The Word Token Mail Link" />
-            </a>
-            <Link>
-              <img src={tiktok} alt="The Word Token Tiktok Link" />
-            </Link>
-            <Link>
-              <img src={discord} alt="The Word Token Discord Link" />
-            </Link>
-            <Link>
-              <img src={youtube} alt="The Word Token Youtube Link" />
-            </Link>
+            {
+              socialLinks.map((socialLink, index) => (
+                <a onClick={removeHandler} href={socialLink.url} target="_blank" key={index}>
+                  <img src={socialLink.img} alt={socialLink.alt} />
+                </a>
+              ))
+            }
           </div>
         </div>
       </nav>
+
+      {/* Navigation Backdrop */}
+
+      <div className={click ? "mobile-navigation-backdrop active" : "mobile-navigation-backdrop"} onClick={removeHandler}></div>
+      
     </>
 
   )
