@@ -109,8 +109,16 @@
     display:flex;
     align-items:center;
     column-gap:28px;
-    animation:move-up 250ms;
     transform:translateY(0);
+
+    &.move-up{
+        animation:move-up 250ms;
+    }
+
+    &.move-down{
+        transform:translateY(100px);
+        animation:move-down 250ms;
+    }
 
     @media screen and (max-width:375px){
         width:100%;
@@ -123,6 +131,11 @@
 @keyframes move-up{
     from{
         transform:translateY(50px);
+    }
+}
+@keyframes move-down{
+    from{
+        transform:translateY(0);
     }
 }
 

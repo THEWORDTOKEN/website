@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Hero.scss'
 import copy from '../../../assets/copy.png'
 
@@ -48,15 +48,31 @@ const Hero = () => {
 
 const ClipboardToast = ({ removeClipboardToast }) => {
 
+  const toastRef = useRef()
+
   useEffect(() => {
-    setTimeout(() => {
+    const toast = toastRef.current;
+    toast.classList.add('move-up')
+
+    const toastAnimationTimer = setTimeout(() => {
+      toast.classList.remove('move-up')
+      toast.classList.add('move-down')
+    }, 2750)
+
+    // timer to unmount component
+    const timer = setTimeout(() => {
       removeClipboardToast()
-    }, 2000)
+    }, 3000)
+
+    return () => {
+      clearTimeout(toastAnimationTimer)
+      clearTimeout(timer)
+    };
   }, [])
 
   return (
     <div className="clipboard-toast" role='alert'>
-      <div className="clipboard-tooltip" role='alert'>
+      <div className="clipboard-tooltip" role='alert' ref={toastRef}>
         <p>Copied to clipboard!</p>
         <span className="clipboard-tooltip-close" onClick={removeClipboardToast}>
           <span className="material-icons">close</span>
