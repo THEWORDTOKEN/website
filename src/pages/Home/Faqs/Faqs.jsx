@@ -77,7 +77,7 @@ const Faqs = () => {
                     <div className="faqs__content--accordion">
                         <h3 className="faqs__content--accordion-title">How do I join the community?  <span><span className="material-icons faqs-accordion-indicator">add</span></span></h3>
                         <div className="faqs__content--accordion-content">
-                        <p>GoTo <a href="https://twitter.com/twdtoken">https://twitter.com/twdtoken</a></p>
+                        <p>GoTo <a href="https://twitter.com/newTWDtoken">https://twitter.com/newTWDtoken</a></p>
                         <p>GoTo <a href="https://t.me/thewordtoken">https://t.me/thewordtoken</a></p>
                         </div>
                     </div>
