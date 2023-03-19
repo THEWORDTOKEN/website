@@ -13,8 +13,8 @@ const Hero = () => {
         </div>
         <div className="hero__content">
           <div className="hero__content--main">
-            <p>A digital asset for every Christian Community.
-              The Word token has been created as God's strategy for the end-time wealth transfer and security - Securing the 7years Joseph strategy for the coming famine.</p>
+            <p>The Word Token $TWD is a community-driven BSC project 
+providing unique read to earn opportunities for users, by utilizing Web 3 e-library and publishing platforms, staking opportunities for rewards, and social ecosystem for networking among community members.</p>
             <div><img src={download} alt="download" className="hero__download--icon"/></div>
             <a href="https://thewordtoken.com/THE-WORD-TOKEN-WHITEPAPER-V1.pdf" target="_blank">
               <button className="btn-black">Read our white paper</button>
