@@ -21,7 +21,8 @@ const Faqs = () => {
                     <div className="faqs__content--accordion">
                         <h3 className="faqs__content--accordion-title">What is The Word Token?  <span><span className="material-icons faqs-accordion-indicator">add</span></span></h3>
                         <div className="faqs__content--accordion-content">
-                            <p>It is the first Christocentric digital currency built by believers of the Christian faith for Believers of the Christian faith. Created as God's strategy for the end-time wealth transfer and security - Securing the seven years Joseph Strategy for the coming famine.</p>
+                            <p>The Word Token $TWD is a community-driven BSC project 
+providing unique read to earn opportunities for users, by utilizing Web 3 e-library and publishing platforms, staking opportunities for rewards, and social ecosystem for networking among community members.</p>
                         </div>
                     </div>
                     <div className="faqs__content--accordion">
