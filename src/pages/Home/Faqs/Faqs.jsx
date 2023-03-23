@@ -42,7 +42,7 @@ providing unique read to earn opportunities for users, by utilizing Web 3 e-libr
                     <div className="faqs__content--accordion">
                         <h3 className="faqs__content--accordion-title">Has ownership been renounced?  <span><span className="material-icons faqs-accordion-indicator">add</span></span></h3>
                         <div className="faqs__content--accordion-content">
-                            <p>YES</p>
+                            <p>YES - <a href="https://bscscan.com/tx/0x1c2b1beb5fbb757af1f79b999429a8cff4c9e20b0b7ff740ee1128df69f2edbb" target='_blank'>Renounce Ownership</a></p>
                         </div>
                     </div>
                     <div className="faqs__content--accordion">
@@ -54,7 +54,7 @@ providing unique read to earn opportunities for users, by utilizing Web 3 e-libr
                     <div className="faqs__content--accordion">
                         <h3 className="faqs__content--accordion-title">How can I stake my $TWD Tokens?  <span><span className="material-icons faqs-accordion-indicator">add</span></span></h3>
                         <div className="faqs__content--accordion-content">
-                            <p>Coming soon</p>
+                            <p>Coming soon - <a href="https://app.thewordtoken.com">https://app.thewordtoken.com</a></p>
                         </div>
                     </div>
                     <div className="faqs__content--accordion">
