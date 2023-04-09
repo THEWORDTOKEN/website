@@ -1,26 +1,27 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './Hero.scss'
 import copy from '../../../assets/copy.png'
+import { useClipboardToastContext } from '../../../context/clipboardToastContext'
+import ClipboardToast from '../../../components/ClipboardToast/ClipboardToast'
 
 const Hero = () => {
 
-  // clipboard click state
-  const [click, setClick] = useState(false)
+  const { show, showClipboardToast, removeClipboardToast } = useClipboardToastContext()
 
   const copyToClipboard = () => {
-    setClick(true);
     const clipboardValue = '0xf00cD9366A13e725AB6764EE6FC8Bd21dA22786e';
     navigator.clipboard.writeText(clipboardValue);
+
+    showClipboardToast()
   }
 
-  const removeClipboardToast = () => setClick(false)
-
+  console.log("Hero")
 
   return (
     <div className="max-wrapper margin-top">
       <div className="max-wrapper__content buycoin-hero">
 
-        {click && <ClipboardToast removeClipboardToast={removeClipboardToast} />}
+        {show && <ClipboardToast message="Copied to clipboard!" removeClipboardToast={removeClipboardToast} />}
 
         <div className="buycoin-hero__title">
           <h1>HOW TO BUY $TWD ON PANCAKESWAP.</h1>
@@ -44,42 +45,5 @@ const Hero = () => {
   )
 }
 
-// Clipboard Toast
-
-const ClipboardToast = ({ removeClipboardToast }) => {
-
-  const toastRef = useRef()
-
-  useEffect(() => {
-    const toast = toastRef.current;
-    toast.classList.add('move-up')
-
-    const toastAnimationTimer = setTimeout(() => {
-      toast.classList.remove('move-up')
-      toast.classList.add('move-down')
-    }, 2750)
-
-    // timer to unmount component
-    const timer = setTimeout(() => {
-      removeClipboardToast()
-    }, 3000)
-
-    return () => {
-      clearTimeout(toastAnimationTimer)
-      clearTimeout(timer)
-    };
-  }, [])
-
-  return (
-    <div className="clipboard-toast" role='alert'>
-      <div className="clipboard-tooltip" role='alert' ref={toastRef}>
-        <p>Copied to clipboard!</p>
-        <span className="clipboard-tooltip-close" onClick={removeClipboardToast}>
-          <span className="material-icons">close</span>
-        </span>
-      </div>
-    </div>
-  )
-}
 
 export default Hero
