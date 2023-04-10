@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import styles from './Merch.module.scss'
 import Navbar from '../../layout/Navbar/Navbar'
 import Footer from '../../layout/Footer/Footer'
@@ -10,8 +10,16 @@ import cloth_4 from '../../assets/twd_cloth_4.jpeg'
 import cloth_5 from '../../assets/twd_cloth_5.jpeg'
 import cloth_6 from '../../assets/twd_cloth_6.jpeg'
 import cloth_7 from '../../assets/twd_cloth_7.jpeg'
+import { useLocation } from 'react-router-dom'
 
 const Merch = () => {
+
+    const location = useLocation();
+  
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [ location.pathname ]);
+
   return (
     <section>
         <div>

@@ -23,6 +23,7 @@ const ClipboardToast = ({ message, removeClipboardToast }) => {
     }
   }
 
+
   return (
     <div className="clipboard-toast" role='alert'>
       <div className="clipboard-tooltip" role='alert' ref={toastRef}>

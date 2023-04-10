@@ -15,7 +15,6 @@ const Hero = () => {
     showClipboardToast()
   }
 
-  console.log("Hero")
 
   return (
     <div className="max-wrapper margin-top">

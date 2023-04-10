@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import styles from './Riskwarning.module.scss'
 import Footer from '../../layout/Footer/Footer'
 import Navbar from '../../layout/Navbar/Navbar'
 import Connect from '../Home/Connect/Connect'
 import riskImg from '../../assets/riskwarning.svg'
-
+import { useLocation } from 'react-router-dom'
 
 const Riskwarning = () => {
+    const location = useLocation();
+  
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [ location.pathname ]);
+
     return (
         <section className={styles.riskwarning_scaffold}>
             <div>

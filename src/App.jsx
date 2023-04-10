@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 import {useLayoutEffect} from 'react'
 import './App.css'
 import Home from './pages/Home/Home'
@@ -11,28 +16,33 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
-        <AllRoutes/>
-      </Router>
+      <AllRoutes/>
     </div>
   )
 }
 
-const AllRoutes = () => {
-  const location = useLocation();
-  // Scroll to top if path changes
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "buycoin",
+    element: <BuyCoin />,
+  },
+  {
+    path: "disclaimer",
+    element: <Riskwarning />,
+  },
+  {
+    path: "merch",
+    element: <Merch />,
+  },
+]);
 
-  return (
-    <Routes>
-      <Route exact path='/' element={<Home />} />
-      <Route path='/buycoin' element={<BuyCoin />} />
-      <Route path='/disclaimer' element={<Riskwarning />} />
-      <Route path='/merch' element={<Merch />} />
-    </Routes>
-  )
+const AllRoutes = () => {
+
+  return <RouterProvider router={router} />
 }
 
 export default App
